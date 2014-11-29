@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Course_work_3
 {
@@ -20,6 +21,16 @@ namespace Course_work_3
         private void Discard_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Check_Input(object sender, EventArgs e) 
+        { 
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

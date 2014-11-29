@@ -7,3 +7,6 @@ c:\users\студент\documents\visual studio 2012\Projects\Course work 3\Cour
 c:\users\студент\documents\visual studio 2012\Projects\Course work 3\Course work 3\obj\Debug\Course work 3.csproj.GenerateResource.Cache
 c:\users\студент\documents\visual studio 2012\Projects\Course work 3\Course work 3\obj\Debug\Course work 3.exe
 c:\users\студент\documents\visual studio 2012\Projects\Course work 3\Course work 3\obj\Debug\Course work 3.pdb
+C:\Users\студент\Documents\GitHub\Course_work_DATABASE\Course work 3\Course work 3\bin\Debug\Course work 3.exe.config
+C:\Users\студент\Documents\GitHub\Course_work_DATABASE\Course work 3\Course work 3\obj\Debug\Course work 3.exe
+C:\Users\студент\Documents\GitHub\Course_work_DATABASE\Course work 3\Course work 3\obj\Debug\Course work 3.pdb

@@ -30,7 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Registration = new System.Windows.Forms.TabPage();
-            this.Budget = new System.Windows.Forms.ComboBox();
+            this.Budget = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Add_action = new System.Windows.Forms.Button();
+            this.Calcel = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Type_of_accident = new System.Windows.Forms.ComboBox();
             this.Submit = new System.Windows.Forms.Button();
             this.Discard = new System.Windows.Forms.Button();
@@ -41,11 +46,6 @@
             this.Region = new System.Windows.Forms.ComboBox();
             this.Country = new System.Windows.Forms.ComboBox();
             this.Report = new System.Windows.Forms.TabPage();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.Calcel = new System.Windows.Forms.Button();
-            this.Add_action = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Registration.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -63,8 +63,8 @@
             // 
             // Registration
             // 
-            this.Registration.Controls.Add(this.groupBox1);
             this.Registration.Controls.Add(this.Budget);
+            this.Registration.Controls.Add(this.groupBox1);
             this.Registration.Controls.Add(this.Type_of_accident);
             this.Registration.Controls.Add(this.Submit);
             this.Registration.Controls.Add(this.Discard);
@@ -84,12 +84,57 @@
             // 
             // Budget
             // 
-            this.Budget.FormattingEnabled = true;
             this.Budget.Location = new System.Drawing.Point(7, 259);
             this.Budget.Name = "Budget";
-            this.Budget.Size = new System.Drawing.Size(167, 21);
-            this.Budget.TabIndex = 9;
+            this.Budget.Size = new System.Drawing.Size(167, 20);
+            this.Budget.TabIndex = 12;
             this.Budget.Text = "Budget";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Add_action);
+            this.groupBox1.Controls.Add(this.Calcel);
+            this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Location = new System.Drawing.Point(499, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(398, 257);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Executed Actions";
+            // 
+            // Add_action
+            // 
+            this.Add_action.Location = new System.Drawing.Point(203, 228);
+            this.Add_action.Name = "Add_action";
+            this.Add_action.Size = new System.Drawing.Size(75, 23);
+            this.Add_action.TabIndex = 13;
+            this.Add_action.Text = "Add Action";
+            this.Add_action.UseVisualStyleBackColor = true;
+            // 
+            // Calcel
+            // 
+            this.Calcel.Location = new System.Drawing.Point(113, 228);
+            this.Calcel.Name = "Calcel";
+            this.Calcel.Size = new System.Drawing.Size(75, 23);
+            this.Calcel.TabIndex = 12;
+            this.Calcel.Text = "Cancel";
+            this.Calcel.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(6, 45);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(386, 177);
+            this.richTextBox2.TabIndex = 11;
+            this.richTextBox2.Text = "Description of the action";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(7, 19);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 10;
             // 
             // Type_of_accident
             // 
@@ -102,7 +147,7 @@
             // 
             // Submit
             // 
-            this.Submit.Location = new System.Drawing.Point(499, 301);
+            this.Submit.Location = new System.Drawing.Point(499, 287);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(117, 34);
             this.Submit.TabIndex = 7;
@@ -111,7 +156,7 @@
             // 
             // Discard
             // 
-            this.Discard.Location = new System.Drawing.Point(280, 301);
+            this.Discard.Location = new System.Drawing.Point(287, 287);
             this.Discard.Name = "Discard";
             this.Discard.Size = new System.Drawing.Size(117, 34);
             this.Discard.TabIndex = 6;
@@ -123,9 +168,9 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(180, 10);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(287, 253);
+            this.richTextBox1.Size = new System.Drawing.Size(313, 253);
             this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = "Description of the accident";
             // 
             // Object
             // 
@@ -180,52 +225,6 @@
             this.Report.Text = "Report";
             this.Report.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(7, 19);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 10;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.Add_action);
-            this.groupBox1.Controls.Add(this.Calcel);
-            this.groupBox1.Controls.Add(this.richTextBox2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Location = new System.Drawing.Point(499, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(398, 257);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Executed Actions";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(6, 45);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(386, 177);
-            this.richTextBox2.TabIndex = 11;
-            this.richTextBox2.Text = "";
-            // 
-            // Calcel
-            // 
-            this.Calcel.Location = new System.Drawing.Point(113, 228);
-            this.Calcel.Name = "Calcel";
-            this.Calcel.Size = new System.Drawing.Size(75, 23);
-            this.Calcel.TabIndex = 12;
-            this.Calcel.Text = "Cancel";
-            this.Calcel.UseVisualStyleBackColor = true;
-            // 
-            // Add_action
-            // 
-            this.Add_action.Location = new System.Drawing.Point(203, 228);
-            this.Add_action.Name = "Add_action";
-            this.Add_action.Size = new System.Drawing.Size(75, 23);
-            this.Add_action.TabIndex = 13;
-            this.Add_action.Text = "Add Action";
-            this.Add_action.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,9 +232,11 @@
             this.ClientSize = new System.Drawing.Size(935, 391);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Putin huilo";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.Registration.ResumeLayout(false);
+            this.Registration.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -254,13 +255,13 @@
         private System.Windows.Forms.Button Submit;
         private System.Windows.Forms.Button Discard;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ComboBox Budget;
         private System.Windows.Forms.ComboBox Type_of_accident;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button Add_action;
         private System.Windows.Forms.Button Calcel;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox Budget;
 
     }
 }
